@@ -1,13 +1,23 @@
+const { EmailJSResponseStatus } = require("@emailjs/browser");
+
 function sendEmail(){
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "salmin",
-        Password : "0693334074",
-        To : 'salmin20shafii@gmail.com',
-        From : document.getElementById("email").value,
-        Subject : "This is the subject",
-        Body : "And this is the body"
-    }).then(
-      message => alert("success")
-    );
+   var params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+   };
 }
+
+const serviceID = "service_bz23hmp";
+const templateID = "template_42s89ck";
+
+EmailJSResponseStatus
+.send(serviceID, templateID, params)
+.then((res) =>{
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("message").value = "";
+  console.log(res);
+  alert("Your message sent successfully");
+})
+.catch((err)=> console.log(err));
