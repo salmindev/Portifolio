@@ -1,6 +1,25 @@
 {
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
-    "bootstrap": "^5.2.3"
-  }
+    "bootstrap": "^5.2.3",
+    "nodemailer": "^6.9.3"
+  },
+  "name": "portifolio",
+  "version": "1.0.0",
+  "main": "script.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salmindev/Portifolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salmindev/Portifolio/issues"
+  },
+  "homepage": "https://github.com/salmindev/Portifolio#readme",
+  "description": ""
 }

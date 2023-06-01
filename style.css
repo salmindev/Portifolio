@@ -1,12 +1,12 @@
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Lato:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Dosis:wght@300;500&family=Lato:wght@300;400&display=swap');
 
 
 *{
     box-sizing: border-box;
 }
 html, body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Dosis', sans-serif;
     background-color: #333333;
     box-sizing: border-box;
    
@@ -102,13 +102,7 @@ a, .btn-link {
     font-weight: 600;
     color: #61574F;
 }
-.btn-brown {
-    background-color: forestgreen;
-    color: white;
-    border:none;
-    width:240px;
 
-}
 #services {
     width: 100%;
 }
@@ -441,6 +435,10 @@ a, .btn-link {
     }
 }
 
+
+  .active {
+    display: block;
+  }
 
 /*brush css*/
 /* create wrapper */
