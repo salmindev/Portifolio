@@ -15,27 +15,37 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary fixed-top shadow-lg">
         <div class="container">
           <a class="navbar-brand logo" href="#">Salmindev</a>
-          <button class="navbar-toggler border border-3 border-danger" id="navbar--toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler border border-3 border-danger" id="navbar--toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end active" id="navbarNav">
-            <ul class="navbar-nav fs-5">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
+          <div class="offcanvas offcanvas-end bg-primary" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex justify-content-end" id="navi">
+                <ul class="navbar-nav fs-5 text-danger w-50 d-flex justify-content-sm-around">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                  </ul>
+            </div>
           </div>
         </div>
       </nav>
+     
+    
+      
+      
 <div class="container heros d-flex justify-content-center align-items-center rounded-3" style="position:relative; margin-top:100px; height:70vh;" id="home">
     <div class="overlay d-flex justify-content-center align-items-center border-2">
         <div class="d-flex align-items-center animate__animated animate__jackInTheBox animate__delay-1s"> <h1 class="ftext-center z-3 text-white text-shadow fw-bolder   " style="text-shadow:2px 3px 5px black;">Hi! I am a</h1> <h1 class="ms-3  text-center z-3  text-shadow fw-bolder animate__animated animate__pulse animate__delay-2s animate__infinite text-primary" style="text-shadow:2px 3px 5px black;">software developer.</h1></div>
@@ -199,8 +209,8 @@
 
 <div class="container" style="height:auto;" id="projects">
     <center>
-        <h1 class="display-5 my-3 fw-bolder text-primary">Projects</h1>
-        <h4 class="text-white mb-3">I work with my own design as well we can perform a work using yours.</h4>
+        <h1 class="display-5 my-3 fw-bolder text-white">Projects</h1>
+        <h4 class="text-primary mb-3">I work with my own design as well we can perform a work using yours.</h4>
     </center>
     <div class="row bg-secondary  mt-2" style="height:auto;">
     <div class="col-sm-6 col-md-4">
