@@ -75,6 +75,13 @@ a, .btn-link {
     }
 /*Custom css*/
 
+
+
+
+.hidden {
+    display: none;
+  }
+
 #navi li a{
     color: black;
 }

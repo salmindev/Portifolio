@@ -18,13 +18,13 @@
           <button class="navbar-toggler border border-3 border-danger" id="navbar--toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="offcanvas offcanvas-end bg-primary" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas offcanvas-end bg-primary" tabindex="0" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+              <h5 class="offcanvas-title" id="offcanvasRightLabel">salmindev</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body d-flex justify-content-end" id="navi">
-                <ul class="navbar-nav fs-5 text-danger w-50 d-flex justify-content-sm-around">
+            <div class="offcanvas-body d-flex justify-content-end">
+                <ul class="navbar-nav fs-5 text-danger w-50 d-flex align-items-center justify-content-sm-around">
                     <li class="nav-item">
                       <a class="nav-link" aria-current="page" href="#home">Home</a>
                     </li>
@@ -41,11 +41,7 @@
             </div>
           </div>
         </div>
-      </nav>
-     
-    
-      
-      
+      </nav>   
 <div class="container heros d-flex justify-content-center align-items-center rounded-3" style="position:relative; margin-top:100px; height:70vh;" id="home">
     <div class="overlay d-flex justify-content-center align-items-center border-2">
         <div class="d-flex align-items-center animate__animated animate__jackInTheBox animate__delay-1s"> <h1 class="ftext-center z-3 text-white text-shadow fw-bolder   " style="text-shadow:2px 3px 5px black;">Hi! I am a</h1> <h1 class="ms-3  text-center z-3  text-shadow fw-bolder animate__animated animate__pulse animate__delay-2s animate__infinite text-primary" style="text-shadow:2px 3px 5px black;">software developer.</h1></div>
@@ -55,26 +51,25 @@
     
     <div class="nav nav-tabs d-flex justify-content-between border-bottom-0" id="myTab" role="tablist">
         <div class="nav-item" role="presentation">
-            <button class="nav-link bg-primary text-black px-5 py-4  rounded-3 btn btn-sm fw-bolder slit-in-vertical" id="home-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="home" aria-selected="true">About me</button>
+            <button class="nav-link bg-primary text-black px-5 py-4  rounded-3 btn btn-sm fw-bolder slit-in-vertical" onclick="scrollToSection('about')" id="home-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="home" aria-selected="true">About me</button>
         </div>
         <div class="nav-item" role="presentation">
-            <button class="nav-link bg-secondary border border-3 border-primary text-primary px-5 py-4 rounded-3 btn btn-sm fw-bolder slit-in-vertical" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">My Skills</button>
+            <button class="nav-link bg-secondary border border-3 border-primary text-primary px-5 py-4 rounded-3 btn btn-sm fw-bolder slit-in-vertical" onclick="scrollToSection('profile')" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">My Skills</button>
         </div>
     </div>
 
-    <div class="container tab-content mt-5 overflow-hidden rounded-3 " id="myTabContent">
+    <section class="container tab-content mt-5 overflow-hidden  py-3" id="myTabContent">
         <div class="container tab-pane animate__animated animate__flipInX" id="about">
-            <div class="row" style="height:auto;">
+            <div class="row" style="height:auto;" >
                 <div class="col-sm-6 bg-primary rounded-3 overflow-hidden text-black py-4 px-4 d-flex flex-column justify-content-around align-items-center" style="border: 10px dashed rgb(13, 13, 13) ;">
                     <h1 class="fw-bolder animate__animated animate__rubberBand animate__delay-3s">Hi!, My name is Salmin</h1>
                     <p class="lead text-center animate__animated animate__zoomIn animate__delay-4s">
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         It has survived not only five centuries,
-                        but also the leap into electronic typesetting,
                         remaining essentially unchanged.
                 
                     </p>
-                    <center><button class="btn--hover nav-link active bg-secondary text-primary border-0 px-5 py-3  rounded-3 btn btn-sm fw-bolder bounce-top zoom-effect" >Contact</button></center>
+                    <center><button class="nav-link active bg-secondary text-primary border-0 px-5 py-3  rounded-3 btn btn-sm fw-bolder bounce-top zoom-effect" >Contact</button></center>
                 </div>
                 <div class="col-sm-6 bg-primary rounded-3 text-white d-flex align-items-center justify-content-center py-4 " style="border: 7mm ridge rgb(13, 13, 13);">
                         <img class="rounded-circle bg-danger animate__animated animate__zoomInDown animate__delay-5s" src="images/avatar-ga8c4158bc_1280.png" style="width:350px; height:350px;" />
@@ -164,7 +159,7 @@
             </div>
             </div> 
        
-</div>
+</section>
 </div>
 <div class="container px-5 py-5 my-1" style="height:auto;" id="services">
     <center>
@@ -172,37 +167,37 @@
         <h3 class="text-primary mb-3">What i can offer to you?</h3>
     </center>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-between gap-sm-2" style="height:auto;">
-        <div class="col col-lg-3  bg-primary rounded-3 d-flex flex-column justify-content-center align-items-center border border-5 border-danger my-3 py-3  zoom-effect" style="height:30vh;">
+        <div class="col col-lg-3  bg-primary rounded-3 d-flex flex-column justify-content-center align-items-center border border-5 border-danger my-3 py-3  bg-img" style="height:30vh;">
             <img src="images/icons8-web-development-64.png" />
-            <h3 class="fw-bolder text-secondary text-center my-3">Graphic desing</h3>
-            <p class="lead text-secondary text-center">Software Systems, Websites, Algorithms, AI & ML Models and Bots.</p>
+            <h3 class="fw-bolder text-white text-center my-3">Graphic desing</h3>
+            <p class="lead text-white text-center">Software Systems, Websites, Algorithms, AI & ML Models and Bots.</p>
         </div>
-        <div class="col col-lg-3 bg-primary d-flex flex-column justify-content-center align-items-center border border-5 border-danger rounded-3 my-3 py-3 zoom-effect" style="height:30vh;">
+        <div class="col col-lg-3 bg-primary d-flex flex-column justify-content-center align-items-center border border-5 border-danger rounded-3 my-3 py-3 bg-img" style="height:30vh;">
             <img src="images/icons8-web-design-53.png" width="66px" height="66px" />
-            <h3 class="fw-bolder text-secondary text-center my-3">Search Optmization Engine(SEO)</h3>
-            <p class="lead text-secondary text-center">Software Systems, Websites, Algorithms, AI & ML Models and Bots.</p>
+            <h3 class="fw-bolder text-white text-center my-3">Search Optmization Engine(SEO)</h3>
+            <p class="lead text-white text-center">Software Systems, Websites, Algorithms, AI & ML Models and Bots.</p>
         </div>
-        <div class="col col-lg-3 bg-primary d-flex flex-column justify-content-center align-items-center border border-5 border-danger rounded-3 my-3 py-3 zoom-effect" style="height:30vh;">
+        <div class="col col-lg-3 bg-primary d-flex flex-column justify-content-center align-items-center border border-5 border-danger rounded-3 my-3 py-3 bg-img" style="height:30vh;">
             <img src="images/icons8-mobile-development-66.png" />
-            <h3 class="fw-bolder text-secondary text-center my-3">Web development</h3>
-            <p class="lead text-secondary text-center">Software Systems, Websites, Algorithms, AI & ML Models and Bots.</p>
+            <h3 class="fw-bolder text-white text-center my-3">Web development</h3>
+            <p class="lead text-white text-center">Software Systems, Websites, Algorithms, AI & ML Models and Bots.</p>
         </div>
     </div>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-between my-5">
-        <div class="col col-lg-3 bg-primary d-flex flex-column justify-content-center align-items-center border border-5 border-danger rounded-3 border-info border-1 my-3 py-3 zoom-effect" style="height:30vh;">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-between ">
+        <div class="col col-lg-3 bg-primary d-flex flex-column justify-content-center align-items-center border border-5 border-danger rounded-3 border-info border-1 my-3 py-3 bg-img" style="height:30vh;">
            <img src="images/icons8-web-hosting-66.png" />
-            <h3 class="fw-bolder text-secondary text-center my-3">Data analysis</h3>
-            <p class="lead text-secondary text-center">Software Systems, Websites, Algorithms, AI & ML Models and Bots.</p>
+            <h3 class="fw-bolder text-white text-center my-3">Data analysis</h3>
+            <p class="lead text-white text-center">Software Systems, Websites, Algorithms, AI & ML Models and Bots.</p>
         </div>
-        <div class="col col-lg-3 bg-primary d-flex flex-column justify-content-center align-items-center border border-5 border-danger rounded-3 border-info border-4 my-3 zoom-effect" style="height:30vh;">
+        <div class="col col-lg-3 bg-primary d-flex flex-column justify-content-center align-items-center border border-5 border-danger rounded-3 border-info border-4 my-3 bg-img" style="height:30vh;">
            <img src="images/icons8-data-analysis-66.png" />
-            <h3 class="fw-bolder text-secondary text-center my-3">Web Hosting</h3>
-            <p class="lead text-secondary text-center">Software Systems, Websites, Algorithms, AI & ML Models and Bots.</p>
+            <h3 class="fw-bolder text-white text-center my-3">Web Hosting</h3>
+            <p class="lead text-white text-center">Software Systems, Websites, Algorithms, AI & ML Models and Bots.</p>
         </div>
-        <div class="col col-lg-3 bg-primary d-flex flex-column justify-content-center align-items-center border border-5 border-danger rounded-3 border-info my-3 py-3 zoom-effect" style="height:30vh;">
+        <div class="col col-lg-3 bg-primary d-flex flex-column justify-content-center align-items-center border border-5 border-danger rounded-3 border-info my-3 py-3 bg-img" style="height:30vh;">
             <img src="images/icons8-seo-64.png" />
-            <h3 class="fw-bolder text-secondary text-center my-3">Mobile app</h3>
-            <p class="lead text-secondary text-center">Software Systems, Websites, Algorithms, AI & ML Models and Bots.</p>
+            <h3 class="fw-bolder text-white text-center my-3">Mobile app</h3>
+            <p class="lead text-white text-center">Software Systems, Websites, Algorithms, AI & ML Models and Bots.</p>
         </div>
     </div>
 </div>

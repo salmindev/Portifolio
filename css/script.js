@@ -97,3 +97,27 @@ var btn = document.getElementsByClassName('.btn--hover');
 btn.addEventListener('hover', function(){
    btn.removeClass.classList('.bounce-top');
 });
+
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    const sectionPosition = section.getBoundingClientRect();
+    const sectionHeight = sectionPosition.height;
+    const windowHeight = window.innerHeight;
+    const offset = window.pageYOffset;
+    const targetPosition = sectionPosition.top + offset - (windowHeight / 2) + (sectionHeight / 2);
+
+    window.scrollTo({
+      top: targetPosition,
+      preventDefault:true,
+      behavior: 'smooth'
+    });
+  }
+}
+images = ['../images/webdev.png','../images/seo.jpg','../images/webdesign.jpg'];
+
+const elements = document.querySelectorAll('.bg-img');
+
+elements.forEach((element, index) => {
+  element.style.backgroundImage = `url('${images[index]}')`;
+});
