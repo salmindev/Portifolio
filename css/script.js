@@ -114,10 +114,5 @@ function scrollToSection(sectionId) {
     });
   }
 }
-images = ['../images/webdev.png','../images/seo.jpg','../images/webdesign.jpg'];
-
-const elements = document.querySelectorAll('.bg-img');
-
-elements.forEach((element, index) => {
-  element.style.backgroundImage = `url('${images[index]}')`;
-});
+ 
+      

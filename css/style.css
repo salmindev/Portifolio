@@ -76,7 +76,18 @@ a, .btn-link {
 /*Custom css*/
 
 
+.bg-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.bg-project{
+    background-image: url('../images/site.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .hidden {
     display: none;
