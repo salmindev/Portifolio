@@ -120,6 +120,14 @@ a, .btn-link {
     font-weight: 600;
     color: #61574F;
 }
+.animate {
+    opacity: 0;
+    transition: ease-in 2s;
+  }
+  
+  .animate.visible {
+    opacity: 1;
+  }
 
 #project {
     width: 100%;

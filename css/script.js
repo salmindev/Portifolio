@@ -111,4 +111,17 @@ function scrollToSection(sectionId) {
   }
 }
  
-      
+  //parallex
+  window.addEventListener('scroll', function() {
+    var elements = document.querySelectorAll('.animate');
+  
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
+      var position = element.getBoundingClientRect();
+  
+      // If the element is in the viewport
+      if (position.top < window.innerHeight) {
+        element.classList.add('visible');
+      }
+    }
+  });
