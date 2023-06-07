@@ -85,18 +85,14 @@ navLinks.forEach(function(link) {
 });
 
 //toggle
-var box = document.getElementById('#navbar--toggle');
-
-box.addEventListener('click', function() {
-  document.getElementById('#navbarNav').classList.toggle('active');
-});
-
-//button 
-var btn = document.getElementsByClassName('.btn--hover');
-
-btn.addEventListener('hover', function(){
-   btn.removeClass.classList('.bounce-top');
-});
+function toggle() {
+  var element = document.getElementById('offcanvas_body');
+  if (element.style.display === 'none') {
+    element.style.display = 'block';
+  } else {
+    element.style.display = 'none';
+  }
+}
 
 function scrollToSection(sectionId) {
   const section = document.getElementById(sectionId);
