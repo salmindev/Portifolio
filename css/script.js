@@ -76,9 +76,13 @@ navLinks.forEach(function(link) {
 
     // Get the target section ID from the link's href attribute
     var targetId = this.getAttribute('href');
-
+    var targetSection = document.querySelectorAll(targetId);
+    ; // Adjust this value based on your desired margin
+  
+    var targetOffsetTop = targetSection.offsetTop ;
     // Scroll to the target section
     document.querySelector(targetId).scrollIntoView({
+      top: targetOffsetTop,
       behavior: 'smooth'
     });
   });
