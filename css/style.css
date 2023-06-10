@@ -163,14 +163,14 @@ a, .btn-link {
     background-image: linear-gradient(rgba(115, 77, 38,.5),rgba(38, 38, 38,.6));
     border-radius: 10px;
 }
-.btn--hover:hover{
-    outline-offset: 5px;
-    outline: 4px dashed #9900cc;
+
+.zoom-effect{
+    cursor: pointer;
 }
 .zoom-effect:hover {
     transition: transform 0.3s;
     cursor: pointer;
-    transform:scale(1.2);
+    transform:scale(0.6);
     box-shadow: white 0px 2px 4px 0px, rgb(255, 0, 0) 0px 2px 16px 0px;
 }
 

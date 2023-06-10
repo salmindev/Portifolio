@@ -40,7 +40,7 @@ $(".contact_btn").on('click', function () {
           success: function(response){
               if(response.status == "success"){
                   // alert("yes");
-                  output = '<div class="alert alert-success bg-warning" style="padding:10px 15px; margin-bottom:30px;">' + 'I received your message, thank you!' + '</div>';
+                  output = '<div class="alert text-success" style="padding:10px 0; margin-bottom:30px;">' + 'I received your message, thank you!' + '</div>';
                   $("#result").hide().html(output).slideDown();
                   $(".contact_btn i").addClass('d-none');
 
@@ -48,7 +48,7 @@ $(".contact_btn").on('click', function () {
                   $('#contact-form-data')[0].reset();
               }else{
                   // alert("yes");
-                  output = '<div class="alert alert-warning" style="padding:10px 15px; margin-bottom:30px;"> An error occured: ' + response.message +  '</div>';
+                  output = '<div class="alert text-info" style="padding:10px 15px; margin-bottom:30px;"> An error occured: ' + response.message +  '</div>';
                   $("#result").hide().html(output).slideDown();
                   $(".contact_btn i").addClass('d-none');
               }
@@ -58,7 +58,7 @@ $(".contact_btn").on('click', function () {
   else
   {
       // alert("yes");
-      output = '<div class="alert alert-danger" style="padding:10px 15px; margin-bottom:30px;">' + msgText +  '</div>';
+      output = '<div class="alert text-info" style="padding:10px 0; margin-bottom:30px;">' + msgText +  '</div>';
       // output = '<div class="alert-success" style="padding:10px 15px; margin-bottom:30px;">' + 'Thanks for the message, I will reach back soon.' + '</div>';
       $("#result").hide().html(output).slideDown();
       $(".contact_btn i").addClass('d-none');
