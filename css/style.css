@@ -164,6 +164,13 @@ a, .btn-link {
     border-radius: 10px;
 }
 
+.contact-title::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: white;
+}
+
 .zoom-effect{
     cursor: pointer;
 }
