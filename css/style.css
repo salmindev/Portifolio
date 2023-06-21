@@ -174,17 +174,11 @@ a, .btn-link {
 .zoom-effect{
     cursor: pointer;
 }
-.zoom-effect:hover {
-    transition: transform 0.3s;
-    cursor: pointer;
-    transform:scale(0.6);
-    box-shadow: white 0px 2px 4px 0px, rgb(255, 0, 0) 0px 2px 16px 0px;
-}
 
     .zoom-effect:hover {
         transform: scale(1.1);
         cursor: pointer;
-        box-shadow: 0 4px 8px 0 #ffbf006e, 0 6px 20px 0 #ffbf008e;
+        filter: drop-shadow(0 0 0.75rem rgb(241, 198, 4));
     }
 
     .bounce-top {
