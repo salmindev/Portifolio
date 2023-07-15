@@ -145,6 +145,8 @@ a, .btn-link {
     align-items:center;
 }
 
+
+
 .heros {
     background-image:url('../images/coding.jpg');
     background-position:center;
@@ -178,7 +180,7 @@ a, .btn-link {
     .zoom-effect:hover {
         transform: scale(1.1);
         cursor: pointer;
-        filter: drop-shadow(0 0 0.75rem rgb(241, 198, 4));
+        filter: drop-shadow(0 0 0.25rem rgb(255, 255, 255));
     }
 
     .bounce-top {
@@ -194,7 +196,17 @@ a, .btn-link {
         padding: 5px 3px;
         margin-right: 10px;
     }
-
+ 
+    .carousel-inner {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+      }
+      
+      .carousel-item {
+        flex: 0 0 auto;
+        width: 100%;
+      }
 
 
     /* keyframes*/
