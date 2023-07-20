@@ -295,21 +295,21 @@
         </div>
         <div class="col-md-5 col px-3 fw-bolder rounded-3 my-2 py-4">
             <h1 class="text-start text-white fw-bold subtitle mb-4">Enquiry</h1>
-            <form  class="contact-form mt-5 my-sm-1" id="contact-form-data" method="POST">
+            <form  class="mt-5 my-sm-1" id="email" onsubmit="sendEmail(); reset(); return false;">
                 <div id="result"></div>  
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label text-white">Name</label>
-                <input type="text" class="form-control" name="name" id="name"  placeholder="e.g Yourname">
+                <input type="text" class="form-control" name="name" id="name"  placeholder="e.g Yourname" required>
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label text-white">Email address</label>
-                <input type="email" class="form-control" name="email" id="email" placeholder="e.g youremail@gmail.com">
+                <input type="email" class="form-control" name="email" id="email" placeholder="e.g youremail@gmail.com" required>
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label text-white">Message</label>
-                <textarea class="form-control" name="message" placeholder="Message" id="message" rows="3"></textarea>
+                <textarea class="form-control" name="message" placeholder="Message" id="message" rows="3" required></textarea>
             </div>
-            <a href="javascript:void(0);" type="submit" id="submit_btn" class="contact_btn btn  btn-secondary btn-rounded text-primary d-block mt-4 bg-primary text-secondary border-0 px-5 py-3 rounded-3 btn btn-sm  zoom-effect w-100">Send Message</a>
+            <button type="submit" class="btn btn-secondary btn-rounded text-primary d-block mt-4 bg-primary text-secondary border-0 px-5 py-3 rounded-3 btn btn-sm zoom-effect w-100">Send Message</button>
            </form>
         </div>
        </div>
@@ -320,6 +320,7 @@
     <p class="lead text-center text-white">Copy Right <small>&copy;</small>2023 Salmindev. All right reserved.</p>
 </footer>
 </div>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
     var images = ['../images/webdev.png','../images/seo.jpg','../images/mobo.jpg', '../images/webdesign.jpg','../images/graphic.jpg','../images/data.jpg'];
     
@@ -328,6 +329,8 @@
     elements.forEach((element, index) => {
       element.style.backgroundImage = `linear-gradient(to bottom,rgba(26, 26, 26, .7), rgba(26, 26, 26, .7)),url('${images[index]}')`;
     });
+
+   
 
 </script>
 
