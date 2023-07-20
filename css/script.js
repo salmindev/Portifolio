@@ -1,5 +1,5 @@
 //contact us form
-$(".contact_btn").on('click', function () {
+/*$(".contact_btn").on('click', function () {
   //disable submit button on click
   // $(".contact_btn").attr("disabled", "disabled");
   // $(".contact_btn b").text('Sending');
@@ -30,7 +30,7 @@ $(".contact_btn").on('click', function () {
   });
 
   //everything looks good! proceed...
-  if (proceed === "true"){
+ /* if (proceed === "true"){
 
       $.ajax({
           type: "POST",
@@ -60,11 +60,27 @@ $(".contact_btn").on('click', function () {
       // alert("yes");
       output = '<div class="alert text-info" style="padding:10px 0; margin-bottom:30px;">' + msgText +  '</div>';
       // output = '<div class="alert-success" style="padding:10px 15px; margin-bottom:30px;">' + 'Thanks for the message, I will reach back soon.' + '</div>';
-      $("#result").hide().html(output).slideDown();
+    
       $(".contact_btn i").addClass('d-none');
 
   }
-});
+});*/
+
+ //function for send form data to email
+ function sendEmail(){
+  Email.send({
+      Host: "smtp.gmail.com",
+      Username: "salmin20shafii@gmail.com",
+      Password: "0693334074",
+      To: "salmin20shafii@gmail.com",
+      From: document.getEmentById("email").value,
+      Subject: "New Contact Form",
+      Body : "Thisi is a body"
+  }).then(
+      message => alert(message)
+  );
+}
+
 //scrolling
 // Get all the navigation links
 var navLinks = document.querySelectorAll('nav ul li a');
