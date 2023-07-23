@@ -48,6 +48,8 @@
         </div>
       </nav>   
 <div class="container heros d-flex justify-content-center align-items-center rounded-3" style="position:relative; margin-top:100px; height:70vh;" id="home">
+      <!-- particles.js container -->
+       <div id="particles-js"></div>
     <div class="overlay d-flex justify-content-center align-items-center border-2">
         <div class="d-flex align-items-center animate__animated animate__jackInTheBox animate__delay-1s"> <h1 class="ftext-center z-3 text-white text-shadow fw-bolder" style="text-shadow:2px 3px 5px black;">Hello! I am a</h1> <h1 class="ms-3  text-center z-3  text-shadow fw-bolder animate__animated animate__pulse animate__delay-2s animate__infinite text-primary" style="text-shadow:2px 3px 5px black;">software developer.</h1></div>
       </div>
@@ -321,6 +323,34 @@
 </footer>
 </div>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
+<!-- scripts -->
+<script src="./particles.js"></script>
+<script src="css/app.js"></script>
+<!-- script -->
+
+<!-- stats.js -->
+<script src="js/lib/stats.js"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  stats.domElement.style.display = 'none';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
 <script>
     var images = ['../images/webdev.png','../images/seo.jpg','../images/mobo.jpg', '../images/webdesign.jpg','../images/graphic.jpg','../images/data.jpg'];
     
