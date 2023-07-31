@@ -67,19 +67,7 @@
 });*/
 
  //function for send form data to email
- function sendEmail(){
-  Email.send({
-      Host: "smtp.gmail.com",
-      Username: "salmin20shafii@gmail.com",
-      Password: "0693334074",
-      To: "salmin20shafii@gmail.com",
-      From: document.getEmentById("email").value,
-      Subject: "New Contact Form",
-      Body : "Thisi is a body"
-  }).then(
-      message => alert(message)
-  );
-}
+
 
 //scrolling
 // Get all the navigation links
