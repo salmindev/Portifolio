@@ -71,6 +71,7 @@
             </div>
           </div>
         </div>
+        <div id="google_translate_element"></div>
       </nav>   
 <div class="container heros d-flex justify-content-center align-items-center rounded-3" style="position:relative; margin-top:100px; height:70vh;" id="home">
       <!-- particles.js container -->
@@ -369,6 +370,7 @@
 <script src="./particles.js"></script>
 <script src="css/app.js"></script>
 <!-- script -->
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <!-- stats.js -->
 <script src="js/lib/stats.js"></script>
@@ -402,7 +404,10 @@
       element.style.backgroundImage = `linear-gradient(to bottom,rgba(26, 26, 26, .7), rgba(26, 26, 26, .7)),url('${images[index]}')`;
     });
 
-   
+   //google translations
+   function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
 
 </script>
 
