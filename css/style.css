@@ -564,4 +564,58 @@ a, .btn-link {
      background-repeat: no-repeat;
      z-index: 100;
    }
-   
+   /* 
+---------------------------------------------
+Google Translator style
+--------------------------------------------- 
+*/
+
+.fixed-con {
+  z-index:1!important;
+  background-color: #f7f8fc;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf{
+ z-index: 9724790009779!important;
+ top:0;
+ left:unset;
+ display:none!important;
+ border-radius:50%;
+ border:2px solid gold;
+}
+.VIpgJd-ZVi9od-aZ2wEe-OiiCO{
+  width:80px;
+  height:80px;
+}
+
+/*hide google translate link | logo | banner-frame */
+.goog-logo-link,.gskiptranslate,.goog-te-gadget span,.goog-te-banner-frame,#goog-gt-tt, .goog-te-balloon-frame,div#goog-gt-{
+  display: none!important;
+}
+.goog-te-gadget {
+  color: transparent!important;
+  font-size:0px;
+}
+
+.goog-text-highlight {
+  background: none !important;
+  box-shadow: none !important;
+  display: none;
+}
+ 
+/*google translate Dropdown */
+
+#google_translate_element select{
+background:rgb(253, 253, 253);
+color:#383ffa;
+border: 1px solid black;
+border-radius:3px;
+padding:4px 6px;
+width: 90px;
+margin: 0 10px;
+}
