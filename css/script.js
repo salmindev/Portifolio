@@ -135,4 +135,42 @@ function scrollToSection(sectionId) {
   });
 
   //particles
+  // Array of quotes
+  const quotes = [
+    "Meditate helps you focus on the present, which can improve your concentration on other tasks in daily life. - KILL THE NOISE",
+    "Meditation can also  -lower the levels of cortisol - the stress hormone - which helps you feel more relaxed. - BITE OR STOP BARKING",
+    "Talent hits a target no one else can hit, Genius hits a target no one else can see.",
+    "I've been losing friends and finding peace, Honestly that sound like a fair trade to me."
+];
+
+// Get quote container and quote text elements
+const quoteContainer = document.getElementById("quote-container");
+const quoteText = document.getElementById("quote-text");
+
+// Function to update quote and apply fade effect
+function changeQuote() {
+    // Pick a random quote
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    const randomQuote = quotes[randomIndex];
+
+    // Update quote text
+    quoteText.textContent = randomQuote;
+
+    // Toggle fade-in-out class to apply fade effect
+    quoteContainer.classList.toggle("fade-in-out");
+    quoteContainer.classList.toggle("active");
+
+    // After a delay, toggle classes again to fade out
+    setTimeout(() => {
+        quoteContainer.classList.toggle("fade-in-out");
+        quoteContainer.classList.toggle("active");
+    }, 5000); // Adjust the delay as needed
+}
+
+// Initial quote change
+changeQuote();
+
+// Set interval to change quote every 5 seconds (adjust as needed)
+setInterval(changeQuote, 7000);
+
   
